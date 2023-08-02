@@ -5,4 +5,8 @@ function getComputerChoice(){
     return choice;
 }
 
+function playRound(playerSelection, computerSelection){
+    
+}
+
 getComputerChoice();
