@@ -27,13 +27,20 @@ function playRound(playerSelection, computerSelection){
         return "It's a Tie!"
     }
     else if(result=="Player"){
-        return `You Win! ${PlayerSelection} beats ${computerSelection}`
+        return `You Win! ${playerSelection} beats ${computerSelection}`
     }
     else{
         return `You Lose! ${computerSelection} beats ${playerSelection}`
     }
 }
 
-const playerSelection = "rock"
-const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
+function game() {
+    console.log("Welcome!")
+    for (let i = 0; i < 5; i++) {
+        const playerSelection = "rock";
+        const computerSelection = getComputerChoice();
+        console.log(playRound(playerSelection, computerSelection));
+    }
+}
+
+game()
